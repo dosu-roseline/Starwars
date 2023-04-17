@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  margin: 20px 110px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.logo {
+  fill: rgb(255, 232, 31);
+  width: 100%;
+  max-width: 28rem;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card:nth-child(1) > * {
+  background-image: url('https://finmavis.github.io/swapi-task/static/media/bg-card-1.0c96fd00.png');
+}
+.card:nth-child(2) > * {
+  background-image: url('https://finmavis.github.io/swapi-task/static/media/bg-card-2.b0a7b209.png');
+}
+.card:nth-child(3) > * {
+  background-image: url('https://finmavis.github.io/swapi-task/static/media/bg-card-3.1914d853.png');
+}
+.card:nth-child(4) > * {
+  background-image: url('https://finmavis.github.io/swapi-task/static/media/bg-card-4.c21c4d4b.png');
+}
+.card:nth-child(5) > * {
+  background-image: url('https://finmavis.github.io/swapi-task/static/media/bg-card-5.67d061d6.png');
+}
+.card:nth-child(6) > * {
+  background-image: url('https://finmavis.github.io/swapi-task/static/media/bg-card-6.b4fea25d.png');
+}
+.card-content {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  transform: perspective(1px) translateZ(0px);
+  box-shadow: transparent 0px 0px 10px 3px, rgb(0, 0, 0) 0px 0px 10px;
+  transition: all 0.3s ease 0s;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.card-content:hover {
+  box-shadow: rgb(32, 152, 209) 0px 0px 10px 3px, rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.link {
+  border-top: 2px solid rgb(142, 46, 46);
+  padding-top: 10px;
+}
+
+.link a {
+  color: rgb(255, 232, 31);
+  text-decoration: none;
+}
+
+.title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  /* padding-bottom: 5px; */
+}
+
+.date {
+  color: rgb(157, 157, 157);
+  font-size: 14px;
+  padding-bottom: 15px;
+}
+
+.summary {
+  padding-bottom: 20px;
+  font-size: 16.5px;
+}
