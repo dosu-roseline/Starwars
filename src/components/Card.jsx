@@ -1,6 +1,8 @@
-import { formatDate } from './helper';
+import { Link } from 'react-router-dom';
+import { formatDate } from '../utils/helper';
 
-const Card = ({ movie }) => {
+const Card = ({ movie, id }) => {
+  console.log(id);
   return (
     <div className="card">
       <div className="card-content">
@@ -8,7 +10,9 @@ const Card = ({ movie }) => {
         <p className="date">{formatDate(movie.release_date)}</p>
         <p className="summary">{movie.summary}</p>
         <p className="link">
-          <a href="#">More Info</a>
+          <Link to={`/movie/${id + 1}`} state={{ movies: movie }}>
+            More Info
+          </Link>
         </p>
       </div>
     </div>
